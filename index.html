@@ -35,7 +35,7 @@
 </head>
 <body>
     <header class="container mx-auto mt-6">
-        <div class="flex justify-end ">
+        <div class="flex justify-end relative ">
             <div class="navbar bg-white lg:bg-main-bg-color md:bg-main-bg-color  lg:rounded-full md:rounded-full flex ">
               <div class="navbar-start">
                 <div class="flex items-center gap-5 lg:hidden md:hidden">
@@ -48,7 +48,7 @@
                 </div>
                 <!-- for lg and md device left navbar list -->
                 <div class="lg:inline md:inline  ">
-                  <ul class="lg:flex lg:space-x-7 md:inline, md:flex md:space-x-7 md:font-medium lg:font-medium  hidden md:text-white lg:text-white md:ml-10 lg:ml-0 ">
+                  <ul class="lg:flex lg:space-x-7 md:inline, md:flex md:space-x-7 md:font-medium lg:font-medium  hidden md:text-white lg:text-white md:ml-6 lg:ml-6 ">
                     <li>
                       <a href="#">Home</a>
                     </li>
@@ -74,6 +74,9 @@
                   </h1>
                 </div>
               </div>
+              <div class="lg:hidden hidden md:inline absolute right-72 ">
+                <img src="images/logo.png" alt="">
+              </div>
               <div class="navbar-end">
                 <div class="lg:hidden md:hidden">
               <div class="dropdown">
@@ -88,6 +91,12 @@
                 </ul>
               </div>
             </div>
+            <div class="relative md:mr-6">
+             <div class="form-control hidden lg:inline md:inline">
+      <input type="text" placeholder="Search Here" class="input input-bordered w-24 md:w-auto rounded-full" />
+      <i class="fa-solid fa-magnifying-glass absolute lg:right-5 lg:top-4 cursor-pointer md:right-5 md:top-4"></i>
+    </div>
+    </div>
           </div>
             </div>
           </div>
@@ -422,6 +431,8 @@
                 </div>
             </div>
         </section>
+        <!-- why choose us section -->
+
     </main>
 </body>
 </html>
