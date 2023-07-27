@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <!-- this is daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- work sans font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<!-- this is font-awesome script -->
+<script src="https://kit.fontawesome.com/756bbf3b2e.js" crossorigin="anonymous"></script>
+<!-- this style tag for custom tailwind -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'main-bg-color':'#F85559'
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body{
+        font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <header class="container mx-auto mt-6">
+        <div class="flex justify-end ">
+            <div class="navbar bg-white lg:bg-main-bg-color md:bg-main-bg-color  lg:rounded-full md:rounded-full flex ">
+              <div class="navbar-start">
+                <div class="flex items-center gap-5 lg:hidden md:hidden">
+                  <div>
+                    <img src="images/logo.png" alt="">
+                  </div>
+                  <div>
+                    <h1 class="normal-case text-xl font-bold cursor-pointer">Fruit Burst</h1>
+                  </div>
+                </div>
+                <!-- for lg and md device left navbar list -->
+                <div class="lg:inline md:inline  ">
+                  <ul class="lg:flex lg:space-x-7 md:inline, md:flex md:space-x-7 md:font-medium lg:font-medium  hidden md:text-white lg:text-white md:ml-10 lg:ml-0 ">
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Shop</a>
+                    </li>
+                    <li>
+                      <a href="#">All Fruits</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-center hidden lg:flex lg:gap-5">
+                <div class="lg:inline md:inline">
+                  <img src="images/logo.png" alt="">
+                </div>
+                <div class=" lg:inline md:inline hidden lg:font-bold lg:text-4xl lg:text-white md:text-white">
+                  <h1>
+                    Fruit Burst
+                  </h1>
+                </div>
+              </div>
+              <div class="navbar-end">
+                <div class="lg:hidden md:hidden">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow -ml-7">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+    </header>
+</body>
+</html>
