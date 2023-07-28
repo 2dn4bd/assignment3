@@ -35,8 +35,8 @@
 </head>
 <body>
     <header class="container mx-auto mt-6">
-        <div class="flex justify-end relative ">
-            <div class="navbar bg-white lg:bg-main-bg-color md:bg-main-bg-color  lg:rounded-full md:rounded-full flex ">
+        <div class="flex justify-end relative">
+            <div class="navbar bg-white lg:bg-main-bg-color md:bg-main-bg-color  lg:rounded-full md:rounded-full flex py-3 ">
               <div class="navbar-start">
                 <div class="flex items-center gap-5 lg:hidden md:hidden">
                   <div>
@@ -48,7 +48,7 @@
                 </div>
                 <!-- for lg and md device left navbar list -->
                 <div class="lg:inline md:inline  ">
-                  <ul class="lg:flex lg:space-x-7 md:inline, md:flex md:space-x-7 md:font-medium lg:font-medium  hidden md:text-white lg:text-white md:ml-6 lg:ml-6 ">
+                  <ul class="lg:flex lg:space-x-7 md:inline, md:flex md:space-x-7 md:font-medium lg:font-medium  hidden md:text-white lg:text-white md:ml-6 lg:ml-6 text-lg">
                     <li>
                       <a href="#">Home</a>
                     </li>
@@ -83,7 +83,7 @@
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 25 25" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow -ml-7 ">
+                <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-50 p-2 shadow -ml-7 ">
                   <li><a>Home</a></li>
                   <li><a>About</a></li>
                   <li><a>Shop</a></li>
@@ -91,9 +91,9 @@
                 </ul>
               </div>
             </div>
-            <div class="relative md:mr-6">
-             <div class="form-control hidden lg:inline md:inline">
-      <input type="text" placeholder="Search Here" class="input input-bordered w-24 md:w-auto rounded-full" />
+            <div class="relative md:mr-6 ">
+             <div class="form-control hidden lg:inline md:inline ">
+      <input type="text" placeholder="Search Here" class=" input input-bordered w-24 md:w-auto rounded-full " />
       <i class="fa-solid fa-magnifying-glass absolute lg:right-5 lg:top-4 cursor-pointer md:right-5 md:top-4"></i>
     </div>
     </div>
@@ -102,11 +102,11 @@
           </div>
           <!-- this is silder section -->
           <section>
-            <div class="lg:mt-20 mt-10 px-6 banner">
+            <div class="lg:mt-10 mt-10 px-6 banner ">
 
-                <div class="w-full h-full carousel">
+                <div class="w-full h-full carousel ">
                     <!-- sider one -->
-                    <div id="slide1" class="relative w-full carousel-item ">
+                    <div id="slide1" class="relative w-full carousel-item z-40">
                         <div class="bg-cover bg-center -z-50 flex justify-center items-center w-full  bg-gray-700 bg-blend-overlay  rounded-lg bg-opacity-50" style="background-image: url(images/banner1.png);">
                           <div class="px-4 py-8 sm:py-16 md:py-24 lg:py-32 text-center">
                               <h1 class="font-extrabold text-3xl md:text-5xl lg:text-6xl text-white">Exotic tastes at your <br> doorstep</h1>
@@ -195,7 +195,7 @@
 <section>
     <div class="lg:flex lg:justify-between md:flex md:justify-between my-5 text-center lg:text-left md:text-left mt-20 mb-14">
    <div class="ml-10 mr-10 lg:ml-0 lg:mr-0">
-     <h1 class="font-extrabold lg:text-4xl md:text-2xl mb-5 text-2xl">
+     <h1 class="font-extrabold lg:text-5xl md:text-2xl mb-5 text-2xl">
        Deal of the day
      </h1>
      <p>
@@ -432,7 +432,94 @@
             </div>
         </section>
         <!-- why choose us section -->
-
+  <!-- ?this is Why Choose Us section -->
+  <section class="mb-5  ml-10 mr-10 lg:ml-0 lg:mr-0">
+    <h1 class=" font-extrabold text-xl text-center mb-3 lg:text-5xl">
+      Why Choose Us
+    </h1>
+    <p class="text-center">
+      Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
+    </p>
+  </section>
+  <!-- this is why Choose Us section -->
+  <div class=" mb-10 grid lg:grid-cols-3 mt-10 gap-8 gap-y-10">
+      <div class=" space-y-10 lg:space-y-7">
+                <!-- why choose us item one -->
+        <div class="lg:flex items-center gap-5 text-center lg:text-start">
+            <div class="flex justify-center mb-2">
+              <img class="bg-gray-400 p-4 max-w-2xl  rounded-full"  src="icon/icon1.svg" alt="">
+            </div>
+          <div>
+            <h5 class="text-xl  mb-4 font-extrabold text-black-color">Dedicated Team</h5>
+            <div class="line mx-auto lg:mx-0"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+                <!-- why choose us item two -->
+        <div class="lg:flex items-center gap-5 text-center lg:text-start">
+            <div class="flex justify-center mb-2">
+              <img class="bg-gray-400 p-4 max-w-2xl rounded-full" src="icon/icon2.svg" alt="">
+            </div>
+          <div>
+            <h5 class="text-xl  mb-4 font-extrabold text-black-color ">Fresh is Best</h5>
+            <div class="line mx-auto lg:mx-0"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+                <!-- why choose us item three -->
+        <div class="lg:flex items-center gap-5 text-center lg:text-start">
+          <div class="flex justify-center mb-2">
+            <img class="bg-gray-400 p-4 max-w-2xl rounded-full" src="icon/icon3.svg" alt="">
+          </div>
+          <div>
+            <h5 class="text-xl  mb-4 font-extrabold text-black-color ">Gift Certificates</h5>
+            <div class="line mx-auto lg:mx-0"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+        </div>
+        <!-- why choose us image part-->
+      </div>
+      <div class="flex justify-center">
+        <img src="./images/whychoose1.png" class="h-full object-cover object-center rounded-lg" alt="">
+      </div>
+      <!-- why choose us right part -->
+      <div class=" space-y-10 lg:space-y-7">
+        <!-- why choose us item one -->
+        <div class="lg:flex items-center text-center lg:text-right gap-5">
+          <div class="">
+            <h5 class="text-xl  mb-4 font-extrabold text-black-color">Integrated Supplier</h5>
+            <div class="line mx-auto"></div>
+            <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+          </div>
+          <div class="flex justify-center mt-3">
+            <img class="bg-gray-400 p-4 max-w-2xl rounded-full" src="icon/icon4.svg" alt="">
+          </div>
+        </div>
+        <!-- why choose us item two-->
+          <div class="lg:flex items-center text-center lg:text-right gap-5">
+            <div>
+              <h5 class="text-xl  mb-4 font-extrabold text-black-color">Sustainable Practice</h5>
+              <div class="line mx-auto "></div>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="flex justify-center mt-3">
+              <img class="bg-gray-400 p-4 max-w-2xl rounded-full" src="icon/icon5.svg" alt="">
+            </div>
+          </div>
+          <!-- why choose us item three-->
+          <div class="items-center text-center lg:flex lg:text-right gap-5">
+            <div>
+              <h5 class="text-xl  mb-4 font-extrabold text-black-color">The Benefits Only</h5>
+              <div class="line mx-auto "></div>
+              <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+            <div class="flex justify-center mt-3">
+              <img class="bg-gray-400 p-4 max-w-2xl rounded-full" src="icon/icon6.svg" alt="">
+            </div>
+          </div>
+    </div>
     </main>
+    <!-- footer -->
+    
 </body>
 </html>
